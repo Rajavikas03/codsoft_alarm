@@ -534,24 +534,24 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
             ),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Expanded(
-                flex: 1,
-                child: IconButton(
+              SizedBox(
+                child: ElevatedButton(
                   onPressed: () => Navigator.pop(context),
-                  icon: Text(
-                    "Cancel",
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
+                  child: Text("Cancel", style: TextStyle(color: Colors.blue)
+                      //  Theme.of(context).textTheme.bodyLarge,
+                      ),
                 ),
               ),
-              Expanded(
-                flex: 1,
-                child: IconButton(
+              SizedBox(
+                child: ElevatedButton(
                   onPressed: saveAlarm,
-                  icon: Text(
-                    "Save",
-                    style: Theme.of(context).textTheme.bodyLarge,
+                  child: Text(
+                    "Save", style: TextStyle(color: Colors.blue),
+
+                    //  Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
               ),

@@ -15,9 +15,11 @@ Future<void> main() async {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+          scaffoldBackgroundColor: Colors.blueGrey,
+          // cardColor: Colors.blueAccent,
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-              seedColor: Colors.deepPurpleAccent, brightness: Brightness.dark)),
+              seedColor: Colors.grey, brightness: Brightness.dark)),
       home: const ExampleAlarmHomeScreen(),
     ),
   );
